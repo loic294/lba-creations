@@ -1,0 +1,90 @@
+@import '../styles/base.scss';
+
+.header {
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+
+    .siteTitle {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90vh;
+        height: auto;
+        transform: rotate(90deg);
+        transform-origin: bottom left;
+        margin-top: -8vh;
+        margin-left: -2.8vh;
+        z-index: -1;
+        
+        .siteTilteText {
+            fill: $very-light-grey;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+
+    .headerContent {
+        height: 100vh;
+        padding: 5vh 12vh 6vh 24vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .headerImage {
+            background-image: url('/images/montagnes.jpg');
+            background-size: cover;
+            background-color: $very-light-grey;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 200px center;
+            flex: 1;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.16);
+            border-radius: 12px;
+            margin-bottom: 60px;
+        }
+
+        .headerNav {
+            margin-bottom: 5px;
+
+            a {
+                margin-left: 50px;
+                font-size: 30px;
+                font-weight: 900;
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
+        
+
+    }
+
+    .headerDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+
+        .myName {
+            color: $black;
+            font-size: 74px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.projectsContainer {
+    position: relative;
+    z-index: 1;
+    background-color: $very-light-grey;
+    padding-bottom: 500px;
+    overflow: hidden;
+
+    svg {
+        margin-left: 2%;
+        margin-right: -2%;
+    }
+
+
+}
