@@ -616,3 +616,17 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+/* New styles */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
