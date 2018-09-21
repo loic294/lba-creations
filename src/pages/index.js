@@ -24,8 +24,8 @@ const IndexPage = () => (
               Bellemare-Alford
             </h1>
             <div className={s.headerNav}>
-              <a href="#design">DESIGN & DÉVELOPEMENT</a>
-              <a href="#photography">PHOTOGRAPHIE</a>
+              <div><a href="#design">DESIGN & DÉVELOPEMENT</a></div>
+              <div><a href="#photography">PHOTOGRAPHIE</a></div>
             </div>
           </div>
         </div>
