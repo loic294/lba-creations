@@ -3,6 +3,7 @@ import React from 'react'
 import s from './home.module.scss'
 
 import Layout from '../components/layout'
+import Photography from '../components/photography/'
 
 import sofia from '../images/sofia.svg';
 
@@ -53,6 +54,8 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+
+    <Photography />
 
     <div style={{ height: 700 }}></div>
 
