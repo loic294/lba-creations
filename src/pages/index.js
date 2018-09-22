@@ -4,6 +4,7 @@ import s from './home.module.scss'
 
 import Layout from '../components/layout'
 import Photography from '../components/photography/'
+import Contact from '../components/contact/'
 
 import sofia from '../images/sofia.svg';
 
@@ -56,6 +57,8 @@ const IndexPage = () => (
     </section>
 
     <Photography />
+
+    <Contact />
 
     
   </Layout>
