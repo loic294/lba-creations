@@ -3,7 +3,16 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import './layout.css'
-window.oncontextmenu = function () { return false; }
+
+window.oncontextmenu = function (e) {
+  if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
+    return false;
+}
+
+window.onmousedown = function (e) {
+  if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
+    e.preventDefault();
+}
 
 const Layout = ({ children }) => (
   <StaticQuery
