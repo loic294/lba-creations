@@ -8,8 +8,6 @@ import Contact from '../components/contact/'
 
 import sofia from '../images/sofia.svg';
 
-console.log(s)
-
 const IndexPage = () => (
   <Layout>
 
