@@ -128,7 +128,7 @@
 
 .projectsContainer {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     background-color: $very-light-grey;
     padding-bottom: 500px;
     overflow: hidden;
@@ -145,7 +145,7 @@
     position: relative;
     background-color: $yellow;
     min-height: 200px;
-    z-index: 1;
+    z-index: 0;
 
     .sofiaTitle {
         position: relative;

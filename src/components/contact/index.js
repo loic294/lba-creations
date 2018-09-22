@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import { Link } from 'gatsby'
 import s from './styles.module.scss'
 
 import { withToastManager } from 'react-toast-notifications';
@@ -10,35 +9,58 @@ const encode = (data) => {
       .join("&");
 }
 
-const Photography = ({ toastManager }) => 
-
 class Photography extends Component {
+
+  constructor(props) {
+    super(props);
+
+    console.log("p", props)
+
+    this.email = React.createRef();
+    this.fullname = React.createRef();
+    this.message = React.createRef();
+  }
   
   submit = e => {
-    const {toastManager} = this.props
+    e.preventDefault();
+    const { toastManager } = this.props
+
+    console.log(this.props)
 
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ 
         "form-name": "contact",
-        name: this.name.target.value,
-        email: this.name.target.email,
-        message: this.name.target.message
+        name: this.fullname.current.value,
+        email: this.email.current.value,
+        message: this.message.current.value
       })
     })
-      .then(() => toastManager.add("Le formulaire a été soumis.", {
-        appearance: 'success',
-        autoDismiss: false,
-      }))
-      .catch(error => alert(error));
+      .then(() => {
+        toastManager.add(`Le formulaire pour ${this.email.current.value} a été soumis. Merci ${this.fullname.current.value}!`, {
+          appearance: 'success',
+          autoDismiss: false
+        })
 
-    e.preventDefault();
+        this.fullname.current.value = "";
+        this.email.current.value = "";
+        this.message.current.value = "";
+
+      })
+      .catch(error => 
+        toastManager.add(error, {
+          appearance: 'error',
+          autoDismiss: true
+        })
+      );
+
+   
   }
 
   render() {
 
-    
+    console.log('PROPS', this.props)
 
     return (
       <section id="photography" className={s.container}>
@@ -48,14 +70,14 @@ class Photography extends Component {
             <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
           </div>
     
-          <form netlify onSubmit={this.submit}>
+          <form netlify="true" onSubmit={this.submit}>
             <input type="hidden" name="form-name" value="contact" />
     
-            <input type="text" name="name" placeholder="Nom" ref={i => this.name = i} />
+            <input type="text" name="name" placeholder="Nom" ref={this.fullname} />
             
-            <input type="email" name="email" placeholder="Courriel" ref={i => this.email = i} />
+            <input type="email" name="email" placeholder="Courriel" ref={this.email} />
             
-            <textarea name="message" placeholder="Message" rows="4"  ref={i => this.message = i}></textarea>
+            <textarea name="message" placeholder="Message" rows="4" ref={this.message}></textarea>
       
             <button type="submit">Envoyer</button>
               
