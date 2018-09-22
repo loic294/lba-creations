@@ -1,14 +1,77 @@
 @import '../../styles/base.scss';
 
 .container {
+    position: relative;
     padding: 180px 0;
+    background-color: $white;
+    z-index: 1;
+}
+
+h2 {
+    margin-top: 120px;
+    font-size: 80px;
+}
+
+button {
+    background-color: $white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    border-radius: 72px;
+    padding: 19px 57px;
+    margin-bottom: 60px;
+    transition: all ease-out 0.4s;
+    color: $grey;
+
+    &:hover {
+        box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+    }
+}
+
+.image {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.16);
 }
 
 .parts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+    &.part1 {
+        .p1l {
+            width: 60%;
+            padding-right: 30px;
+        }
+        .p1r {
+            width: 40%;
+            padding-left: 30px;
+            max-width: 600px;
+        }
+    }
 
-    .part1 {
+    &.part2 {
+        padding-top: 60px;
+        .p2l {
+            width: 44%;
+            padding-right: 60px;
+            padding-top: 80px;
+        }
+        .p2r {
+            width: 56%;
+            padding-left: 70px;
+        }
+    }
 
+    &.part3 {
+        padding-top: 40px;
+        .p3l {
+            width: 60%;
+            padding-right: 60px;
+            padding-top: 80px;
+        }
+        .p3r {
+            width: 40%;
+            padding-left: 30px;
+        }
     }
 
 }

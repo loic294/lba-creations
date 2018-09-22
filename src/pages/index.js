@@ -50,14 +50,12 @@ const IndexPage = () => (
             <p>J’ai confondé Tutorat Sofia. Inspirée de l’économie du partage, Sofia est le meilleur moyen de trouver un tuteur ou une tutrice compétent pour vos enfants d’âge primaire, secondaire ou collégial.</p>
             <button>Visiter le site</button>
           </div>
-          <img src={sofia} />
+          <img src={sofia} alt="4 clipart students standing side-by-side" />
         </div>
       </div>
     </section>
 
     <Photography />
-
-    <div style={{ height: 700 }}></div>
 
     
   </Layout>

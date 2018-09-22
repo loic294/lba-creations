@@ -6,6 +6,11 @@ html {
 body {
   margin: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 article,
 aside,
 details,
@@ -186,9 +191,6 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
-}
-* {
-  box-sizing: inherit;
 }
 *:before {
   box-sizing: inherit;
