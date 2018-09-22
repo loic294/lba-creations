@@ -1,0 +1,10 @@
+@import '../../styles/base.scss';
+
+.footer {
+    position: relative;
+    z-index: 0;
+    padding: 14px 30px; 
+    background-color: $white;
+    color: $light-grey;
+    font-size: 14px;
+}
