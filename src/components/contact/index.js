@@ -14,8 +14,6 @@ class Photography extends Component {
   constructor(props) {
     super(props);
 
-    console.log("p", props)
-
     this.email = React.createRef();
     this.fullname = React.createRef();
     this.message = React.createRef();
@@ -40,7 +38,7 @@ class Photography extends Component {
       .then(() => {
         toastManager.add(`Le formulaire pour ${this.email.current.value} a été soumis. Merci ${this.fullname.current.value}!`, {
           appearance: 'success',
-          autoDismiss: false
+          autoDismiss: true
         })
 
         this.fullname.current.value = "";
@@ -59,8 +57,6 @@ class Photography extends Component {
   }
 
   render() {
-
-    console.log('PROPS', this.props)
 
     return (
       <section id="photography" className={s.container}>
