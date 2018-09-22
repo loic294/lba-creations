@@ -2,13 +2,15 @@ import React from 'react'
 //import { Link } from 'gatsby'
 import s from './styles.module.scss'
 
+import { withToastManager } from 'react-toast-notifications';
+
 const encode = (data) => {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
 }
 
-const Photography = () => (
+const Photography = ({ toastManager }) => (
   <section id="photography" className={s.container}>
     <div className="container">
       <h2>Contacter</h2>
@@ -27,7 +29,10 @@ const Photography = () => (
             message: this.name.target.message
           })
         })
-          .then(() => alert("Success!"))
+          .then(() => toastManager.add("Le formulaire a été soumis.", {
+            appearance: 'success',
+            autoDismiss: false,
+          }))
           .catch(error => alert(error));
 
         e.preventDefault();
@@ -48,4 +53,4 @@ const Photography = () => (
   </section>
 )
 
-export default Photography
+export default withToastManager(Photography)
