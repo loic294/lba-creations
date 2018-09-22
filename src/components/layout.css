@@ -643,3 +643,7 @@ button {
 button:hover {
   box-shadow: 0 12px 36px rgba(0,0,0,0.1);
 }
+
+button:focus {
+  outline: none;
+}

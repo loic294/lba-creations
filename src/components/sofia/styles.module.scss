@@ -1,0 +1,71 @@
+@import '../../styles/base.scss';
+
+
+.sofiaContainer {
+    position: relative;
+    background-color: $yellow;
+    min-height: 200px;
+    z-index: 0;
+
+    .sofiaTitle {
+        position: relative;
+        text-transform: uppercase;
+        margin: 0;
+
+        .sofiaTitle1 {
+            position: absolute;
+            font-size: 130px;
+            color: $grey;
+            top: -70px;
+            z-index: 2;
+        }
+        .sofiaTitle2 {
+            position: relative;
+            color: $white;
+            text-transform: $white;
+            font-size: 160px;
+            padding-top: 70px;
+            text-align: right;
+        }
+    }
+
+    .sofiaContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .sofiaText {
+            width: 50%;
+
+            p {
+                font-weight: 300;
+                color: $black;
+                font-size: 36px;
+                line-height: 42px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+
+            button {
+                background-color: $grey;
+                color: $white;
+                padding: 19px 52px;
+                border-radius: 72px;
+                margin-bottom: 140px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+                transition: all ease 0.4s;
+
+                &:hover {
+                    background-color: $dark-grey;
+                    box-shadow: 0 12px 36px rgba(0,0,0,0.2);
+                }
+            }
+
+        }
+
+        img {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+}
