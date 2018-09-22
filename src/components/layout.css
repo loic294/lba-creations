@@ -632,7 +632,7 @@ button {
   border: none;
   cursor: pointer;
   background-color: #fff;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.16);
   border-radius: 72px;
   padding: 19px 57px;
   transition: all ease-out 0.4s;
@@ -641,7 +641,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.24);
 }
 
 button:focus {

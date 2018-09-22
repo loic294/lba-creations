@@ -59,7 +59,7 @@ class Photography extends Component {
   render() {
 
     return (
-      <section id="photography" className={s.container}>
+      <section className={s.container}>
         <div className="container">
           <h2>Contacter</h2>
           <div className={s.email}>
