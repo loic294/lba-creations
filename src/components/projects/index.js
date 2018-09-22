@@ -18,12 +18,12 @@ const Header = () => (
 
             <div className={s.project}>
               <div className={s.imgContainer}>
-                <img src={img1} className={s.image} />
+                <img src={img1} className={s.image} alt="Capture d'écran de voilalachine.com" />
               </div>
               <div className={s.content}>
                 <h3>Voile Lachine</h3>
                 <p>Site Web promotionnel et système d'inscription et de gestion du camp de jour</p>
-                <a href="https://voilelachine.com" target="_blank">
+                <a href="https://voilelachine.com" target="_blank" rel="noopener noreferrer">
                   <button>Visiter le site</button>
                 </a>
               </div>
@@ -31,12 +31,12 @@ const Header = () => (
 
             <div className={s.project}>
               <div className={s.imgContainer}>
-              <img src={img2} className={s.image} />
+              <img src={img2} className={s.image} alt="Capture d'écran electionageb.ca" />
               </div>
               <div className={s.content}>
                 <h3>Élections AGEB</h3>
                 <p>Si promotionnel pour les élections de l'association générale étudiante de Brébeuf</p>
-                <a href="https://electionageb.lbacreations.com/" target="_blank">
+                <a href="https://electionageb.lbacreations.com/" target="_blank" rel="noopener noreferrer">
                   <button>Visiter le site</button>
                 </a>
               </div>
@@ -44,12 +44,12 @@ const Header = () => (
 
             <div className={s.project}>
               <div className={s.imgContainer}>
-                <img src={img3} className={s.image} />
+                <img src={img3} className={s.image} alt="Capture d'écran de fondationdesamisdevanier.ca" />
               </div>
               <div className={s.content}>
                 <h3>Fondation des amis de vanier</h3>
                 <p>Site Web promotionnel et système d'achat de matériel scolaire spécialisé</p>
-                <a href="https://fondationdesamisdevanier.ca" target="_blank">
+                <a href="https://fondationdesamisdevanier.ca" target="_blank" rel="noopener noreferrer">
                   <button>Visiter le site</button>
                 </a>
               </div>
