@@ -18,7 +18,7 @@ const Photography = ({ toastManager }) => (
         <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
       </div>
 
-      <form onSubmit={e => {
+      <form netlify onSubmit={e => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
