@@ -631,5 +631,15 @@ pre tt:after {
 button {
   border: none;
   cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border-radius: 72px;
+  padding: 19px 57px;
+  transition: all ease-out 0.4s;
+  color: #404040;
+  margin-bottom: 30px;
 }
 
+button:hover {
+  box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+}

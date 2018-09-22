@@ -5,26 +5,18 @@
     padding: 180px 0;
     background-color: $white;
     z-index: 1;
-}
 
-h2 {
-    margin-top: 120px;
-    font-size: 80px;
-}
-
-button {
-    background-color: $white;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    border-radius: 72px;
-    padding: 19px 57px;
-    margin-bottom: 60px;
-    transition: all ease-out 0.4s;
-    color: $grey;
-
-    &:hover {
-        box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+    h2 {
+        margin-top: 120px;
+        font-size: 80px;
     }
+
+    button {
+        margin-bottom: 30px;
+    }
+    
 }
+
 
 .image {
     border-radius: 12px;
