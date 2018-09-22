@@ -3,8 +3,11 @@ import s from './styles.module.scss'
 
 import sofiaImg from '../../images/sofia.svg';
 
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 const Sofia = () => (
-  <section className={s.sofiaContainer}>
+  <ScrollableAnchor id="sofia">
+      <section className={s.sofiaContainer}>
         <div className="container">
           <h2 className={s.sofiaTitle}>
             <div className={s.sofiaTitle1}>Startup</div>
@@ -21,6 +24,7 @@ const Sofia = () => (
           </div>
         </div>
       </section>
+  </ScrollableAnchor>
 )
 
 export default Sofia

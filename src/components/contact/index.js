@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import s from './styles.module.scss'
 
 import { withToastManager } from 'react-toast-notifications';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -59,28 +60,30 @@ class Photography extends Component {
   render() {
 
     return (
-      <section className={s.container}>
-        <div className="container">
-          <h2>Contacter</h2>
-          <div className={s.email}>
-            <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
-          </div>
-    
-          <form name="contact" data-netlify="true" netlify="true" onSubmit={this.submit} netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact" />
-    
-            <input type="text" name="name" placeholder="Nom" ref={this.fullname} />
-            
-            <input type="email" name="email" placeholder="Courriel" ref={this.email} />
-            
-            <textarea name="message" placeholder="Message" rows="4" ref={this.message}></textarea>
+      <ScrollableAnchor id="contact">
+        <section className={s.container}>
+          <div className="container">
+            <h2>Contacter</h2>
+            <div className={s.email}>
+              <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
+            </div>
       
-            <button type="submit">Envoyer</button>
+            <form name="contact" data-netlify="true" netlify="true" onSubmit={this.submit} netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+      
+              <input type="text" name="name" placeholder="Nom" ref={this.fullname} />
               
-          </form>
-    
-        </div>
-      </section>
+              <input type="email" name="email" placeholder="Courriel" ref={this.email} />
+              
+              <textarea name="message" placeholder="Message" rows="4" ref={this.message}></textarea>
+        
+              <button type="submit">Envoyer</button>
+                
+            </form>
+      
+          </div>
+        </section>
+      </ScrollableAnchor>
     )
   }
 }
