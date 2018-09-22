@@ -9,7 +9,6 @@ import maison from '../../images/photography/maison.jpg'
 import toronto from '../../images/photography/toronto.jpg'
 import parc from '../../images/photography/parc.jpg'
 import nuit from '../../images/photography/nuit.jpg'
-import france from '../../images/photography/france.jpg'
 
 const Photography = () => (
   <section id="photography" className={s.container}>
