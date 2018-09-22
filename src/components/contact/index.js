@@ -10,8 +10,8 @@ const Photography = () => (
         <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
       </div>
 
-      <form name="contact2" netlify data-netlify="true">
-        <input type="hidden" name="form-name" value="contact2" />
+      <form name="contact" netlify data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
 
         <input type="text" name="name" placeholder="Nom" />
         
