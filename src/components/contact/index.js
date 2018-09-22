@@ -66,7 +66,7 @@ class Photography extends Component {
             <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
           </div>
     
-          <form netlify="true" onSubmit={this.submit} netlify-honeypot="bot-field">
+          <form name="contact" data-netlify="true" netlify="true" onSubmit={this.submit} netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
     
             <input type="text" name="name" placeholder="Nom" ref={this.fullname} />
