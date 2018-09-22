@@ -70,7 +70,7 @@ class Photography extends Component {
             <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
           </div>
     
-          <form name="contact" netlify="true" onSubmit={this.submit}>
+          <form netlify="true" onSubmit={this.submit}>
             <input type="hidden" name="form-name" value="contact" />
     
             <input type="text" name="name" placeholder="Nom" ref={this.fullname} />
