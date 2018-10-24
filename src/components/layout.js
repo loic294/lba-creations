@@ -4,15 +4,15 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import './layout.css'
 
-window.oncontextmenu = function (e) {
-  if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
-    return false;
-}
+// window.oncontextmenu = function (e) {
+//   if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
+//     return false;
+// }
 
-window.onmousedown = function (e) {
-  if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
-    e.preventDefault();
-}
+// window.onmousedown = function (e) {
+//   if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
+//     e.preventDefault();
+// }
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,8 +30,9 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Développeur, photographe & étudiant basé à Montréal, CA. Je travaille présentement pour Microsoft.' },
+            { name: 'keywords', content: 'web design, web development, photography, montreal, canada, microsoft intern' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
           link={[
             { href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,900', rel: 'stylesheet' }
