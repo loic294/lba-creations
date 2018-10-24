@@ -18,10 +18,10 @@ const Photography = () => (
         <div className={`${s.parts} ${s.part1}`}>
           <div className={s.p1l}>
             <h2>Photographie</h2>
-            <a href="">
+            <a href="http://lbaphotographie.ca">
               <button>Visiter la galerie</button>
             </a>
-            <a href="">
+            <a href="https://store.lbaphotographie.ca">
               <button>Visiter le magasin</button>
             </a>
             <img src={automne} className={s.image} alt="Ruelle de Vancouver durant la nuit" />
