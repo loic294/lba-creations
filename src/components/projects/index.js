@@ -6,6 +6,10 @@ import img1 from '../../images/voile.png'
 import img2 from '../../images/ageb.png'
 import img3 from '../../images/fdav.png'
 
+import logo_microsoft from '../../images/logo/microsoft.png'
+import logo_commutifi from '../../images/logo/commutifi.png'
+import logo_volume7 from '../../images/logo/volume7.png'
+
 const Header = () => (
   <ScrollableAnchor id="design">
     <section className={s.projectsContainer}>
@@ -59,45 +63,18 @@ const Header = () => (
 
         <h2>Mes employeurs</h2>
 
-        <div className={s.projects}>
+        <div className={s.employeurs}>
 
-            <div className={s.project}>
-              <div className={s.imgContainer}>
-                <img src={img1} className={s.image} />
-              </div>
-              <div className={s.content}>
-                <h3>Voile Lachine</h3>
-                <p>Site Web promotionnel et système d'inscription et de gestion du camp de jour</p>
-                <a href="https://voilelachine.com" target="_blank">
-                  <button>Visiter le site</button>
-                </a>
-              </div>
+            <div className={s.logo}>
+                <img src={logo_microsoft} className={s.image} />
             </div>
 
-            <div className={s.project}>
-              <div className={s.imgContainer}>
-              <img src={img2} className={s.image} />
-              </div>
-              <div className={s.content}>
-                <h3>Élections AGEB</h3>
-                <p>Si promotionnel pour les élections de l'association générale étudiante de Brébeuf</p>
-                <a href="https://electionageb.lbacreations.com/" target="_blank">
-                  <button>Visiter le site</button>
-                </a>
-              </div>
+            <div className={s.logo}>
+                <img src={logo_commutifi} className={s.image} />
             </div>
 
-            <div className={s.project}>
-              <div className={s.imgContainer}>
-                <img src={img3} className={s.image} />
-              </div>
-              <div className={s.content}>
-                <h3>Fondation des amis de vanier</h3>
-                <p>Site Web promotionnel et système d'achat de matériel scolaire spécialisé</p>
-                <a href="https://fondationdesamisdevanier.ca" target="_blank">
-                  <button>Visiter le site</button>
-                </a>
-              </div>
+            <div className={s.logo}>
+                <img src={logo_volume7} className={s.image} />
             </div>
 
         </div>

@@ -53,3 +53,15 @@
         }
     }
 }
+
+.employeurs {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .logo {
+        position: relative;
+        margin: 20px 40px;
+        width: calc(33% - 80px);
+    }
+}
