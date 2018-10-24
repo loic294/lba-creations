@@ -17,6 +17,11 @@
         text-transform: uppercase;
         text-align: center;
         width: 100%;
+
+        @media screen and (max-width: 560px) {
+            top: -31px;
+            font-size: 62px;
+        }
     }
 
     .email {
@@ -26,6 +31,10 @@
             font-weight: 100;
             text-decoration: none;
             color: $grey;
+
+            @media screen and (max-width: 560px) {
+               font-size: 32px;
+            }
         }
     }
 

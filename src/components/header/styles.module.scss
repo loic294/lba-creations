@@ -36,6 +36,11 @@
             padding-right: 8vh;
         }
 
+        @media screen and (max-width: 560px) {
+            padding: 2vh 4vh 2vh 4vh;
+            width: 100vw;
+        }
+
         .headerImage {
             background-image: url('../../images/montagnes.jpg');
             background-size: cover;
@@ -47,6 +52,10 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.16);
             border-radius: 12px;
             margin-bottom: 60px;
+
+            @media screen and (max-width: 560px) {
+                width: 100%;
+            }
         }
 
     }
@@ -56,6 +65,12 @@
         justify-content: space-between;
         align-items: flex-end;
         flex-direction: row;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
 
         .myName {
             color: $black;
@@ -73,6 +88,15 @@
             @media screen and (max-width: 1490px) {
                 font-size: 56px;
             }
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: 560px) {
+                font-size: 42px;
+            }
+
         }
 
         .headerNav {
@@ -81,6 +105,16 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
+
+            @media screen and (max-width: 768px) {
+                justify-content: flex-start;
+                // text-align: left;
+            }
+
+            @media screen and (max-width: 560px) {
+                display: block;
+                text-align: left;
+            }
 
             div {
                 position: relative;
@@ -104,6 +138,11 @@
                     @media screen and (max-width: 1490px) {
                         font-size: 24px;
                     }
+
+                    @media screen and (max-width: 560px) {
+                        display: none;
+                    }
+                    
                 }
     
                 a::after {
@@ -115,6 +154,11 @@
                     background-color: $black;
                     content: "";
                     transition: all ease-out 0.6s;
+
+                    @media screen and (max-width: 560px) {
+                        right: auto;
+                        left: 0;
+                    }
                 }
     
                 a:hover::after {

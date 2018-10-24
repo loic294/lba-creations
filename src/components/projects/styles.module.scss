@@ -25,6 +25,10 @@
     align-items: stretch;
     margin-top: 30px;
 
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
     .project {
         position: relative;
         margin: 20px 15px;
@@ -34,6 +38,10 @@
         box-shadow: 0 16px 36px rgba(0, 0, 0, 0.02);
         text-align: center;
         overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
 
         .imgContainer {
             height: auto;
@@ -59,9 +67,23 @@
     align-items: center;
     margin-top: 20px;
 
+    @media screen and (max-width: 520px) {
+        display: block;
+    }
+
     .logo {
         position: relative;
         margin: 20px 40px;
         width: calc(33% - 80px);
+
+        @media screen and (max-width: 520px) {
+            width: auto;
+            padding: 20px 40px;
+            margin: 0 auto;
+        }
+
+        img  {
+            max-width: 100%;
+        }
     }
 }
