@@ -19,7 +19,7 @@ const Sofia = () => (
               <p>
               {t(
                 "J’ai confondé Tutorat Sofia. Inspirée de l’économie du partage, Sofia est le meilleur moyen de trouver un tuteur ou une tutrice compétent pour vos enfants d’âge primaire, secondaire ou collégial.",
-                "I co-founded Sofia Tutors. Inspired by the shared economy model, Sofia is the best way to find a competent guardian for your primary, secondary or college-age children."
+                "I co-founded Sofia Tutors. Inspired by the shared economy model, Sofia is the best way to find a competent tutors for your primary, secondary or college-age child."
               )}</p>
               <a href="https://sofiatutors.com">
                 <button>{t("Visiter le site", "Visit the site")}</button>
