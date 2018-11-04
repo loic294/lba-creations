@@ -4,17 +4,17 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import './layout.css'
 
-// if (typeof window !== "undefined") {
-//   window.oncontextmenu = function (e) {
-//     if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
-//       return false;
-//   }
+if (typeof window !== "undefined") {
+  window.oncontextmenu = function (e) {
+    if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
+      return false;
+  }
   
-//   window.onmousedown = function (e) {
-//     if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
-//       e.preventDefault();
-//   }
-// }
+  window.onmousedown = function (e) {
+    if (!["INPUT", "TEXTAREA", "BUTTON", "A"].includes(e.target.tagName))
+      e.preventDefault();
+  }
+}
 
 const Layout = ({ children }) => (
   <StaticQuery
