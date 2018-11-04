@@ -17,3 +17,8 @@ export const t = (fr, en) => {
 }
 
 export const getLang = () => lang
+
+export const updateLang = (langue) => {
+    lang = langue
+    localStorage.setItem('lang', langue) 
+}

@@ -10,24 +10,39 @@ import Footer from '../components/footer/'
 
 import { ToastProvider } from 'react-toast-notifications';
 
-const IndexPage = () => (
-  <ToastProvider>
-    <Layout>
+import { getLang, updateLang } from '../utils/translate'
 
-      <Header />
+class IndexPage extends React.Component {
 
-      <Projects />
+  state = {
+    lang: getLang()
+  }
 
-      <Sofia />
+  changeLang = (lang) => {
+    console.log('CHANGE LANG', lang)
+    updateLang(lang)
+    this.setState({ lang }, () => console.log(getLang()))
+  }
 
-      <Photography />
+  render() {
+    return <ToastProvider>
+      <Layout>
 
-      <Contact />
+        <Header changeLang={this.changeLang} />
 
-      <Footer />
+        <Projects />
 
-    </Layout>
-  </ToastProvider>
-)
+        <Sofia />
+
+        <Photography />
+
+        <Contact />
+
+        <Footer />
+
+      </Layout>
+    </ToastProvider>
+  }
+}
 
 export default IndexPage

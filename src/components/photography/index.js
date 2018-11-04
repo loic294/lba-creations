@@ -2,6 +2,7 @@ import React from 'react'
 //import { Link } from 'gatsby'
 import s from './styles.module.scss'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import { t } from '../../utils/translate'
 
 import vancouver from '../../images/photography/vancouver.jpg'
 import automne from '../../images/photography/automne.jpg'
@@ -17,12 +18,12 @@ const Photography = () => (
       <div className="container">
         <div className={`${s.parts} ${s.part1}`}>
           <div className={s.p1l}>
-            <h2>Photographie</h2>
+            <h2>{t("Photographie", "Photography")}</h2>
             <a href="http://lbaphotographie.ca">
-              <button>Visiter la galerie</button>
+              <button>{t("Visiter la galerie", "Visit my gallery")}</button>
             </a>
             <a href="https://store.lbaphotographie.ca">
-              <button>Visiter le magasin</button>
+              <button>{t("Visiter le magasin", "Visit my store")}</button>
             </a>
             <img src={automne} className={s.image} alt="Ruelle de Vancouver durant la nuit" />
           </div>
