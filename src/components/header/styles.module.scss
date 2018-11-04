@@ -24,6 +24,14 @@
             }
             
         }
+
+        @media screen and (max-width: 560px) {
+            background-color: #fff;
+            border-radius: 4px;
+            right: 3vh;
+            top: 3vh;
+            padding: 6px 8px;
+        }
     }
 
     .siteTitle {
@@ -58,7 +66,7 @@
         }
 
         @media screen and (max-width: 560px) {
-            padding: 2vh 4vh 2vh 4vh;
+            padding: 2vh 2vh 2vh 10vh;
             width: 100vw;
         }
 
