@@ -5,6 +5,20 @@
     height: 100vh;
     z-index: 0;
 
+    .lang {
+        position: absolute;
+        right: 0px;
+        padding: 10 8px;
+        
+        a {
+            text-decoration: none;
+            display: block;
+            font-size: 18px;
+            font-weight: 900;
+            
+        }
+    }
+
     .siteTitle {
         position: fixed;
         top: 0;
