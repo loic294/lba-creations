@@ -20,7 +20,60 @@
 
 }
 
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .arrow {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 10px 20px;
+
+        &:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        & > div {
+            width: 2px;
+            background-color: $grey;
+            height: 30px;
+        }
+
+        &.aRight {
+            transform: rotate(180deg);
+        }
+
+        .aTop {
+            transform-origin: 0% 100%;
+            transform: rotate(24deg);
+        }
+
+        .aBottom {
+            transform-origin: 0% 0%;
+            transform: rotate(-24deg);
+        }
+    }
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.projectSliderContainer {
+    position: relative;
+    overflow: auto;
+    display: flex;
+    transition: all ease-in-out 0.4s;
+}
+
 .projects {
+    width: 100%;
     display: flex;
     align-items: stretch;
     margin-top: 30px;
@@ -40,7 +93,7 @@
         overflow: hidden;
 
         @media screen and (max-width: 768px) {
-            width: 100%;
+            width: calc(100% - 30px);
         }
 
         .imgContainer {
