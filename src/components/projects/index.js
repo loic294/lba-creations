@@ -111,7 +111,7 @@ class Header extends React.Component {
   }
 
   move = (add) => {
-    const isSmall = window.innerWidth < 769 
+    const isSmall = typeof window !== "undefined" ? window.innerWidth < 769 : false
     const { slides, slide } = this.state
     let next = slide + add
     if (next >= (isSmall ? slides * 3 : slides))
@@ -124,7 +124,7 @@ class Header extends React.Component {
 
   render() {
 
-    const isSmall = window.innerWidth < 769 
+    const isSmall = typeof window !== "undefined" ? window.innerWidth < 769 : false
     const { slides, slide } = this.state
     let nbrSlides = isSmall ? slides * 3 : slides
     const cSlide = isSmall ? 1 : slides 
