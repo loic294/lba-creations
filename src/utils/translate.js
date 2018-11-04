@@ -1,6 +1,12 @@
 
 let lang = 'fr'
 
+if (typeof localStorage === "undefined")
+    localStorage = {
+        getItem: () => "fr",
+        setItem: () => null
+    }
+
 if (typeof navigator !== "undefined" && navigator.language)
     lang = navigator.language
 
