@@ -1,19 +1,20 @@
 
 let lang = 'fr'
 
-if (typeof localStorage === "undefined")
-    localStorage = {
+const ls = typeof localStorage === "undefined" ?
+    {
         getItem: () => "fr",
         setItem: () => null
-    }
+    } :
+    localStorage
 
 if (typeof navigator !== "undefined" && navigator.language)
     lang = navigator.language
 
-if (localStorage.getItem('lang')) {
-    lang = localStorage.getItem('lang')
+if (ls.getItem('lang')) {
+    lang = ls.getItem('lang')
 } else {
-    localStorage.setItem('lang', lang)
+    ls.setItem('lang', lang)
 }
 
 
@@ -29,5 +30,5 @@ export const getLang = () => lang
 
 export const updateLang = (langue) => {
     lang = langue
-    localStorage.setItem('lang', langue) 
+    ls.setItem('lang', langue) 
 }
