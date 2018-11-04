@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './styles.module.scss'
+import { t } from '../../utils/translate'
 
 export default ({ img, name, desc, url, alt}) => (
 	<div className={s.project}>
@@ -10,7 +11,7 @@ export default ({ img, name, desc, url, alt}) => (
 			<h3>{name}</h3>
 			<p>{desc}</p>
 			<a href={url} target="_blank" rel="noopener noreferrer">
-				<button>Visiter le site</button>
+				<button>{t("Visiter le site", "Visit the website")}</button>
 			</a>
 		</div>
 	</div>

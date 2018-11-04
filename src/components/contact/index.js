@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import s from './styles.module.scss'
+import { t } from '../../utils/translate'
 
 import { withToastManager } from 'react-toast-notifications';
 import ScrollableAnchor from 'react-scrollable-anchor'
@@ -63,7 +64,7 @@ class Photography extends Component {
       <ScrollableAnchor id="contact">
         <section className={s.container}>
           <div className="container">
-            <h2>Contacter</h2>
+            <h2>{t("Contacter", "Contact")}</h2>
             <div className={s.email}>
               <a href="mailto:loic@lbacreations.com?subject=Me%20contacter">loic @ lbacreations.com</a>
             </div>

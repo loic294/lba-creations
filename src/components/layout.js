@@ -30,9 +30,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title="LBA Créations - Loïc Bellemare-Alford - Montréal, Canada"
           meta={[
-            { name: 'description', content: 'Développeur, photographe & étudiant basé à Montréal, CA. Je travaille présentement pour Microsoft.' },
+            { name: 'description', content: 'Développeur, photographe & étudiant basé à Montréal, CA. Je travaille présentement pour Microsoft à Vancouver.' },
             { name: 'keywords', content: 'web design, web development, photography, montreal, canada, microsoft intern' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
           ]}
