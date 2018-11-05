@@ -19,90 +19,6 @@ import logo_microsoft from '../../images/logo/microsoft.png'
 import logo_commutifi from '../../images/logo/commutifi.png'
 import logo_volume7 from '../../images/logo/volume7.png'
 
-
-const projects = [{
-  name: "Voile Lachine",
-  img: img1,
-  desc: t(
-    "Site Web promotionnel et système d'inscription et de gestion du camp de jour",
-    "Promotional website, registration system and management system for a day camp"
-  ),
-  url: "https://voilelachine.com",
-  alt: "Capture d'écran de voilalachine.com"
-},{
-  name: "Élections AGEB",
-  img: img2,
-  desc: t(
-    "Site promotionnel pour les élections de l'association générale étudiante de Brébeuf",
-    "Promotional site for the elections of the general student association of Brébeuf"
-  ),
-  url: "https://electionageb.lbacreations.com/",
-  alt: "Capture d'écran electionageb.ca"
-},{
-  name: "Aménagements Solvert",
-  img: solvert,
-  desc: t(
-    "Site Web promotionnel et mise en place d'un système de communcation",
-    "Promotional website for the elections of the general student association of Brébeuf"
-  ),
-  url: "https://solvert.ca",
-  alt: "Capture d'écran de solvert.ca"
-},{
-  name: "InfoVisual",
-  img: infovisual,
-  desc: t(
-    "Mise à jour d'un site web de grande performance et qui respecte les règles de Google",
-    "Update of a high performance website that complies with Google's rules"
-  ),
-  url: "https://voilelachine.com",
-  alt: "Capture d'écran de voilalachine.com"
-},{
-  name: "OstéoTerrebonne",
-  img: osteo,
-  desc: t(
-    "Simple site web promotionnel pour une compagnie locale",
-    "Simple promotional website for a local company"
-  ),
-  url: "https://electionageb.lbacreations.com/",
-  alt: "Capture d'écran electionageb.ca"
-},{
-  name: "Fondation des amis de vanier",
-  img: img3,
-  desc: t(
-    "Site Web promotionnel et système d'achat de matériel scolaire spécialisé",
-    "Promotional website and purchase system of specialized educational materials"
-  ),
-  url: "https://fondationdesamisdevanier.ca",
-  alt: "Capture d'écran de fondationdesamisdevanier.ca"
-},{
-  name: "Magasin du Monde",
-  img: mdm,
-  desc: t(
-    "Site de eCommerce avec POS et système de gestion personnalisé",
-    "ECommerce website with POS and personalized management system"
-  ),
-  url: "https://voilelachine.com",
-  alt: "Capture d'écran de voilalachine.com"
-},{
-  name: t("Calcultrice de cote R", "RScore calculator"),
-  img: rscore,
-  desc: t(
-    "Calculateur de cote R qui permet d'utiliser des données statistiques pour combler les données manquantes",
-    "RScore calculator that allows the use of statistical data to fill missing data"
-  ),
-  url: "https://electionageb.lbacreations.com/",
-  alt: "Capture d'écran electionageb.ca"
-},{
-  name: "Chant Mathématique",
-  img: concours,
-  desc: t(
-    "Site web de vote pour un cours de chant mathématique au secondaire",
-    "Voting website for a high school mathematics singing contest"
-  ),
-  url: "https://lbacreations.com/p/concoursmath/?a=2013",
-  alt: "Capture d'écran du site du concours de chant mathématique"
-}]
-
 class Header extends React.Component {
 
   state = {
@@ -123,6 +39,89 @@ class Header extends React.Component {
   }
 
   render() {
+
+    const projects = [{
+      name: "Voile Lachine",
+      img: img1,
+      desc: t(
+        "Site Web promotionnel et système d'inscription et de gestion du camp de jour",
+        "Promotional website, registration system and management system for a day camp"
+      ),
+      url: "https://voilelachine.com",
+      alt: "Capture d'écran de voilalachine.com"
+    },{
+      name: "Élections AGEB",
+      img: img2,
+      desc: t(
+        "Site promotionnel pour les élections de l'association générale étudiante de Brébeuf",
+        "Promotional site for the elections of the general student association of Brébeuf"
+      ),
+      url: "https://electionageb.lbacreations.com/",
+      alt: "Capture d'écran electionageb.ca"
+    },{
+      name: "Aménagements Solvert",
+      img: solvert,
+      desc: t(
+        "Site Web promotionnel et mise en place d'un système de communcation",
+        "Promotional website for the elections of the general student association of Brébeuf"
+      ),
+      url: "https://solvert.ca",
+      alt: "Capture d'écran de solvert.ca"
+    },{
+      name: "InfoVisual",
+      img: infovisual,
+      desc: t(
+        "Mise à jour d'un site web de grande performance et qui respecte les règles de Google",
+        "Update of a high performance website that complies with Google's rules"
+      ),
+      url: "https://voilelachine.com",
+      alt: "Capture d'écran de voilalachine.com"
+    },{
+      name: "OstéoTerrebonne",
+      img: osteo,
+      desc: t(
+        "Simple site web promotionnel pour une compagnie locale",
+        "Simple promotional website for a local company"
+      ),
+      url: "https://electionageb.lbacreations.com/",
+      alt: "Capture d'écran electionageb.ca"
+    },{
+      name: "Fondation des amis de vanier",
+      img: img3,
+      desc: t(
+        "Site Web promotionnel et système d'achat de matériel scolaire spécialisé",
+        "Promotional website and purchase system of specialized educational materials"
+      ),
+      url: "https://fondationdesamisdevanier.ca",
+      alt: "Capture d'écran de fondationdesamisdevanier.ca"
+    },{
+      name: "Magasin du Monde",
+      img: mdm,
+      desc: t(
+        "Site de eCommerce avec POS et système de gestion personnalisé",
+        "ECommerce website with POS and personalized management system"
+      ),
+      url: "https://voilelachine.com",
+      alt: "Capture d'écran de voilalachine.com"
+    },{
+      name: t("Calcultrice de cote R", "RScore calculator"),
+      img: rscore,
+      desc: t(
+        "Calculateur de cote R qui permet d'utiliser des données statistiques pour combler les données manquantes",
+        "RScore calculator that allows the use of statistical data to fill missing data"
+      ),
+      url: "https://electionageb.lbacreations.com/",
+      alt: "Capture d'écran electionageb.ca"
+    },{
+      name: "Chant Mathématique",
+      img: concours,
+      desc: t(
+        "Site web de vote pour un cours de chant mathématique au secondaire",
+        "Voting website for a high school mathematics singing contest"
+      ),
+      url: "https://lbacreations.com/p/concoursmath/?a=2013",
+      alt: "Capture d'écran du site du concours de chant mathématique"
+    }]
 
     const isSmall = typeof window !== "undefined" ? window.innerWidth < 769 : false
     const { slides, slide } = this.state
