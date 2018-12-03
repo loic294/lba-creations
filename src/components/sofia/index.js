@@ -12,7 +12,7 @@ const Sofia = () => (
         <div className="container">
           <h2 className={s.sofiaTitle}>
             <div className={s.sofiaTitle1}>Startup</div>
-            <div className={s.sofiaTitle2}>{t("Tuotrat Sofia", "Sofia Tutors")}</div>
+            <div className={s.sofiaTitle2}>{t("Tutorat Sofia", "Sofia Tutors")}</div>
           </h2>
           <div className={s.sofiaContent}>
             <div className={s.sofiaText}>
