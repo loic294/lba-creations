@@ -26,7 +26,7 @@ const Header = ({ changeLang }) => (
           Bellemare-Alford
         </h1>
         <div className={s.headerNav}>
-          <div><a href="#design">{t("DESIGN & DÉVELOPEMENT", "DESIGN & DEVELOPMENT")}</a></div>
+          <div><a href="#design">{t("DESIGN & DÉVELOPPEMENT", "DESIGN & DEVELOPMENT")}</a></div>
           <div><a href="#photography">{t("PHOTOGRAPHIE", "PHOTOGRAPHY")}</a></div>
         </div>
       </div>
